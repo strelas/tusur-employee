@@ -10,12 +10,12 @@ class MyApp extends StatelessWidget {
 
   List<Lesson> get lessons {
     return [
-      Lesson("Математика", "420-3", LessonType.OFFSET, 10, 40, 13, 15, "ГК2"),
-      Lesson("Математика", "420-3", LessonType.OFFSET, 10, 40, 13, 15, "ГК2"),
-      Lesson("Математика", "420-3", LessonType.OFFSET, 10, 40, 13, 15, "ГК2"),
-      Lesson("Математика", "420-3", LessonType.OFFSET, 10, 40, 13, 15, "ГК2"),
-      Lesson("Математика", "420-3", LessonType.OFFSET, 10, 40, 13, 15, "ГК2"),
-      Lesson("Математика", "420-3", LessonType.OFFSET, 10, 40, 13, 15, "ГК2"),
+      Lesson("Математика", "420-3", LessonType.LECTURE, 10, 40, 13, 15, "ГК2 228"),
+      Lesson("Математика", "420-3", LessonType.LABORATORY, 10, 40, 13, 15, "ГК2 228"),
+      Lesson("Математика", "420-3", LessonType.OFFSET, 10, 40, 13, 15, "ГК2 228"),
+      Lesson("Математика", "420-3", LessonType.OFFSET, 10, 40, 13, 15, "ГК2 228"),
+      Lesson("Математика", "420-3", LessonType.OFFSET, 10, 40, 13, 15, "ГК2 228"),
+      Lesson("Математика", "420-3", LessonType.OFFSET, 10, 40, 13, 15, "ГК2 288"),
     ];
   }
 
@@ -23,12 +23,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: Center(
-        child: Timetable(lessons: lessons,),
+      home: Scaffold(
+        backgroundColor: Color(0xFF617EE8),
+        body: Center(
+          child: Timetable(lessons: lessons,),
+        ),
       ),
     );
   }
