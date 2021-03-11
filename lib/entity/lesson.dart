@@ -1,10 +1,12 @@
 class Lesson {
-  Lesson(this.name, this.group, this.type, this.start, this.finish, this.place);
+  Lesson(this.name, this.group, this.type, this.startHour, this.startMinute, this.finishHour, this.finishMinute, this.place);
   final String name;
   final String group;
   final LessonType type;
-  final DateTime start;
-  final DateTime finish;
+  final int startHour;
+  final int startMinute;
+  final int finishHour;
+  final int finishMinute;
   final String place;
 }
 enum LessonType{
