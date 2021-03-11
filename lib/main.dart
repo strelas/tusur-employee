@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:tusur_employee/components/timetable.dart';
+import 'package:tusur_employee/entity/lesson.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+
+  List<Lesson> get lessons {
+    //TODO
+    throw UnimplementedError();
+  }
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -26,7 +34,9 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Center(
+        child: Timetable(),
+      ),
     );
   }
 }
