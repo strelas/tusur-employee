@@ -59,26 +59,19 @@ class _LessonWidget extends StatelessWidget {
       case LessonType.LECTURE:
         return Color(0xFFBAFFC5);
       case LessonType.INDEPENDENT_WORK:
-        // TODO: Handle this case.
-        break;
+        return Color(0xFFFFFFFF);
       case LessonType.COURSEWORK:
-        // TODO: Handle this case.
-        break;
+        return Color(0xFFDD7BFF);
       case LessonType.COURSE_PROJECT:
-        // TODO: Handle this case.
-        break;
+        return Color(0xFFEEBCFF);
       case LessonType.EXAM:
-        // TODO: Handle this case.
-        break;
+        return Color(0xFFFF6B98);
       case LessonType.WORK_PRACTICE:
-        // TODO: Handle this case.
-        break;
+        return Color(0xFFFAFF00);
       case LessonType.OFFSET:
-        // TODO: Handle this case.
-        break;
+        return Color(0xFFFFE352);
       case LessonType.RATE_OFFSET:
-        // TODO: Handle this case.
-        break;
+        return Color(0xFFFFA740);
     }
     return Color(0xFFFF0000);
   }
